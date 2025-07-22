@@ -17,10 +17,12 @@ body {
     height: inherit;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 input {
-    font-size: 20px;
+    font-size: 25px;
     border: unset;
     outline: unset;
     border-top-right-radius: 5px;
@@ -54,17 +56,13 @@ span {
 }  
 
 .parent {
-    height: inherit;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 3rem;
     gap: 1.3rem;
     /* border: 3px solid orange; */
-    max-width: 581px;
-    z-index: 2;
-    margin: 0 auto;
 }
 
 .oval-top-left-shape {
@@ -91,6 +89,7 @@ span {
 
 .title-and-input-div{
     width: 100%;
+    max-width: 40rem;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -99,19 +98,20 @@ span {
 }
 
 .title-div {
+    width: 100%;
+    max-width: 40rem;
+    padding: 0 3rem;
     /* border: 1px solid orange; */
     font-family: system-ui, sans-serif;
     display: grid;
     place-content: center;
     gap: 2vmin;
-    width: fit-content;
-    width: 100%;
     z-index: 1;
 }
 
 .search-and-submit-btn-div {
-    display: flex;
     width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -134,11 +134,11 @@ span {
 }
 
 .search-div-parent {
+    width: inherit;
     display: flex;
     flex-direction: column;
     position: relative;
     /* border: 1px solid red; */
-    width: 100%;
 }
 
 .search-div{
@@ -150,8 +150,7 @@ span {
     background-color: #f7f7f7;
     border: unset;
     border-radius: 2px;
-    padding: 7px 10px;
-    /* max-width: 29rem; */
+    padding: 10px 13px;
     /* border: 1px solid blue; */
 }
 
